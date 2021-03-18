@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Setup Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: Setup Node Modules
@@ -31,7 +31,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Setup Node 14.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 14.x
       - name: Setup Node Modules
@@ -73,7 +73,7 @@ jobs:
           sudo apt-get --only-upgrade install google-chrome-stable
           google-chrome --version
       - name: Setup Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: Setup Node Modules
@@ -109,7 +109,7 @@ jobs:
         with:
           name: compiled-libs
       - name: Setup Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: Setup Node Modules
@@ -142,7 +142,7 @@ jobs:
           sudo apt-get --only-upgrade install google-chrome-stable
           google-chrome --version
       - name: Setup Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: Setup Node Modules
@@ -169,7 +169,7 @@ jobs:
         with:
           name: compiled-libs
       - name: Setup Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: Setup Node Modules
@@ -184,7 +184,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Setup Node 14.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 14.x
       - name: Setup Node Modules
@@ -227,7 +227,7 @@ jobs:
         with:
           name: compiled-libs
       - name: Setup Node 14.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 14.x
       - name: Setup Node Modules
@@ -267,7 +267,7 @@ jobs:
         with:
           name: changelog
       - name: Setup Node 14.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 14.x
       - name: Setup Node Modules
